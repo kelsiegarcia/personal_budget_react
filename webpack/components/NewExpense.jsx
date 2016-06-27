@@ -34,7 +34,7 @@ class NewExpense extends React.Component {
             <input type='text' placeholder='Category' ref='category' required />
             <input type='number' placeholder='Amount' ref='amount' required />
             <input type='date' placeholder='Due Date' ref='dueDate' />  
-            <input type='submit' className='btn' />
+            <input type='submit' className='btn white teal-text' />
           </form>
         </div>
       </div>

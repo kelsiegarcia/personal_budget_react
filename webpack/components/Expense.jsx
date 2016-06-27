@@ -45,7 +45,7 @@ class Expense extends React.Component {
 
   edit() {
     return(
-      <form onSubmit={this.handleEdit.bind(this)}>
+      <form className="container" onSubmit={this.handleEdit.bind(this)}>
         <tr>
           <td>
             <input ref='name' type='text' placeholder='name' defaultValue={this.state.expense.name} />
@@ -87,10 +87,10 @@ class Expense extends React.Component {
          <label for={key} onClick={this.paidClick}>Paid</label>
        </td>
        <td>
-       <button className="btn" onClick={this.toggleEdit}>Edit</button>
-       </td>
+       <button className="btn teal lighten-3" onClick={this.toggleEdit}>Edit</button>
+       </td> 
        <td>
-         <button className="btn red" onClick={() => this.props.deleteExpense(expense.id)}>Delete</button>
+         <button className="btn teal darken-3" onClick={() => this.props.deleteExpense(expense.id)}>X</button>
        </td>
      </tr>
     )  
